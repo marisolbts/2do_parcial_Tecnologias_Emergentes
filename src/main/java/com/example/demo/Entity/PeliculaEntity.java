@@ -56,22 +56,27 @@ public class PeliculaEntity {
     }
 
     public void setDirector(String director) {
+
         this.director = director;
     }
 
     public int getAno() {
+
         return ano;
     }
 
     public void setAno(int ano) {
+
         this.ano = ano;
     }
 
     public int getDuracion() {
+
         return duracion;
     }
 
     public void setDuracion(int duracion) {
+
         this.duracion = duracion;
     }
 
@@ -84,10 +89,12 @@ public class PeliculaEntity {
     }
 
     public String getSinopsis() {
+
         return sinopsis;
     }
 
-    public void setSinopsis(String sinopsis) {
+    public void setSinopsis(String sinopsis)
+    {
         this.sinopsis = sinopsis;
     }
 }
