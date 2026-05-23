@@ -1,0 +1,2 @@
+# 2do_parcial_Tecnologias_Emergentes
+parcial
