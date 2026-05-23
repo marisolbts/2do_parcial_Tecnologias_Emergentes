@@ -21,6 +21,7 @@ public class PeliculaController {
         this.service = service;
     }
 
+
     @Operation(summary = "Listar Películas", description = "Obtiene todas las películas registradas")
     @GetMapping
     public List<PeliculaEntity> obtenerPeliculas() {
@@ -32,6 +33,7 @@ public class PeliculaController {
     public Optional<PeliculaEntity> obtenerPelicula(@PathVariable Integer id) {
         return service.buscarPorId(id);
     }
+
 
     @Operation(summary = "Registrar nuevas Películas", description = "Agrega una nueva película al sistema. El id es autogenerado, no lo envíes")
     @PostMapping
@@ -46,6 +48,7 @@ public class PeliculaController {
     public PeliculaEntity actualizarPelicula(@PathVariable Integer id, @RequestBody PeliculaEntity pelicula) {
         return service.actualizar(id, pelicula);
     }
+
 
     @Operation(summary = "Eliminar Películas por id", description = "Elimina de forma permanente una película usando su ID")
     @DeleteMapping("/{id}")
