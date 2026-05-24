@@ -50,6 +50,7 @@ public class PeliculaController {
     }
 
 
+
     @Operation(summary = "Eliminar Películas por id", description = "Elimina de forma permanente una película usando su ID")
     @DeleteMapping("/{id}")
     public void eliminarPelicula(@PathVariable Integer id) {
